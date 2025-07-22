@@ -2,33 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AMR Predictor</title>
+    <title>Antibiotic Susceptibility Predictor</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #eef4f8;
+            background-color: #f5f8fb;
             margin: 0;
             padding: 20px;
         }
 
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background-color: #fff;
-            padding: 25px 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        h1 {
+            color: #003366;
+            text-align: center;
         }
 
-        h2 {
-            text-align: center;
-            color: #005577;
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            border: 2px solid #004080;
+        }
+
+        .section-title {
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px 30px;
+            margin-top: 10px;
+            margin-bottom: 20px;
         }
 
         label {
             font-weight: bold;
             display: block;
-            margin-top: 15px;
             margin-bottom: 5px;
         }
 
@@ -37,174 +52,191 @@
             padding: 8px;
             border-radius: 4px;
             border: 1px solid #aaa;
-            background-color: #f9f9f9;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         button {
-            width: 100%;
-            padding: 10px;
-            background-color: #0074a2;
+            background-color: #0077b6;
             color: white;
-            border: none;
-            border-radius: 5px;
-            margin-top: 20px;
+            padding: 10px 20px;
             font-size: 16px;
+            border: none;
+            border-radius: 6px;
             cursor: pointer;
         }
 
         button:hover {
-            background-color: #005f82;
+            background-color: #005b8d;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 25px;
+            margin-top: 15px;
         }
 
         table, th, td {
-            border: 1px solid #ccc;
+            border: 1px solid #004080;
         }
 
         th, td {
+            padding: 12px;
             text-align: left;
-            padding: 10px;
         }
 
         th {
-            background-color: #e8f1f5;
+            background-color: #e0eaf5;
         }
 
-        .Susceptible { background-color: #d4edda; color: #155724; }
-        .Intermediate { background-color: #fff3cd; color: #856404; }
-        .Resistant { background-color: #f8d7da; color: #721c24; }
-
-        .tab-buttons {
-            display: flex;
-            margin-bottom: 10px;
+        .success {
+            color: green;
+            font-weight: bold;
         }
 
-        .tab-buttons button {
-            flex: 1;
-            padding: 10px;
-            cursor: pointer;
-            border: none;
-            background: #eee;
+        .error {
+            color: red;
+            font-weight: bold;
         }
 
-        .tab-buttons button.active {
-            background-color: #0074a2;
-            color: white;
-        }
-
-        .tab-content {
-            display: none;
-        }
-
-        .tab-content.active {
-            display: block;
-        }
+      .disclaimer-box {
+      border: 2px solid #cc0000;
+      background-color: #fff5f5;
+      padding: 20px;
+      border-radius: 15px;
+      width: 90%;
+      margin: auto;
+      font-size: 14px;
+      text-align: justify;
+      color: #333;
+    }
+    .disclaimer-box b {
+      display: block;
+      text-align: center;
+      color: #cc0000;
+      margin-bottom: 10px;
+    }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2>🧬 Antibiotic Susceptibility Predictor</h2>
 
-        <div class="tab-buttons">
-            <button onclick="showTab(event, 'input')" class="active">Patient Input</button>
-            <button onclick="showTab(event, 'results')">Prediction Results</button>
+<div class="container">
+    <h1>🔬 Antibiotic Susceptibility Predictor</h1>
+
+    <div class="section-title">Patient Input</div>
+    <form id="predict-form">
+        <div class="form-grid">
+            <div>
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required></select>
+            </div>
+            <div>
+                <label for="species">Organism</label>
+                <select id="species" name="species" required></select>
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <select id="age" name="age" required></select>
+            </div>
+            <div>
+                <label for="family">Family</label>
+                <select id="family" name="family" required></select>
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <select id="country" name="country" required></select>
+            </div>
+            <div>
+                <label for="source">Source</label>
+                <select id="source" name="source" required></select>
+            </div>
+            <div>
+                <label for="speciality">Specialty</label>
+                <select id="speciality" name="speciality" required></select>
+            </div>
         </div>
 
-        <div id="input" class="tab-content active">
-            <form id="predictForm">
-                {% for field, options in dropdowns.items() %}
-                    <label for="{{ field }}">{{ field.replace('_list', '').replace('_', ' ').title() }}:</label><br>
-                    <select name="{{ field }}" id="{{ field }}">
-                        {% for option in options %}
-                            <option value="{{ option }}">{{ option }}</option>
-                        {% endfor %}
-                    </select><br><br>
-                {% endfor %}
-                <button type="submit">🔍 Predict</button>
-            </form>
+        <div class="button-container">
+            <button type="submit">🔍 Predict</button>
         </div>
+    </form>
 
-        <div id="results" class="tab-content">
-            {% if predictions %}
-                <table>
-                    <thead><tr><th>Antibiotic</th><th>Prediction</th></tr></thead>
-                    <tbody>
-                        {% for row in predictions %}
-                        <tr class="{{ row['Prediction'] }}">
-                            <td>{{ row['Antibiotic'] }}</td>
-                            <td>{{ row['Prediction'] }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            {% else %}
-                <p>No predictions yet. Please fill in the form and click Predict.</p>
-            {% endif %}
-        </div>
+    <div class="section-title">Prediction Results</div>
+    <div id="results-table"></div>
+
+    <div class="disclaimer-box">
+        <strong><h1>Disclaimer:</h1></strong>
+        This application's predictive artificial intelligence model is intended solely for informational purposes.
+        The model’s outputs are based on available data and underlying assumptions made during its design and development.
+        <br><br>
+        Users are strongly advised to exercise caution and avoid relying exclusively on the model’s predictions when making critical decisions.
+        The outputs should be considered as one of multiple sources of information. It is recommended that users seek guidance
+        from qualified experts or professionals to interpret and validate the model’s predictions in the context of their specific use case.
+        <br><br>
+        The developers, creators, and providers of this AI model disclaim any liability for decisions, actions, or outcomes arising
+        from the use of the model’s predictions. Users are solely responsible for verifying and interpreting the outputs and are encouraged
+        to exercise independent judgment and discretion when applying the results.
     </div>
+</div>
 
-    <script>
-        function showTab(event, tabId) {
-            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-            document.querySelectorAll('.tab-buttons button').forEach(btn => btn.classList.remove('active'));
-            document.getElementById(tabId).classList.add('active');
-            event.target.classList.add('active');
-        }
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const form = document.getElementById("predictForm");
-
-            form.addEventListener("submit", function (event) {
-                event.preventDefault();
-
-                const formData = {};
-                const formElements = form.elements;
-
-                for (let i = 0; i < formElements.length; i++) {
-                    const el = formElements[i];
-                    if (el.name) {
-                        const key = el.name.replace("_list", "");
-                        formData[key] = el.value;
-                    }
+<script>
+    // Populate dropdowns
+    fetch("/dropdowns")
+        .then(res => res.json())
+        .then(data => {
+            for (const [key, values] of Object.entries(data)) {
+                const fieldId = key.replace("_list", "");
+                const select = document.getElementById(fieldId);
+                if (select) {
+                    values.forEach(option => {
+                        const opt = document.createElement("option");
+                        opt.value = option;
+                        opt.textContent = option;
+                        select.appendChild(opt);
+                    });
                 }
-
-                fetch("/predict", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(formData)
-                })
-                .then(response => response.json())
-                .then(data => {
-                    const resultsTab = document.getElementById("results");
-                    const tableContainer = document.createElement("div");
-
-                    if (data.status === "success") {
-                        let html = `<table><thead><tr><th>Antibiotic</th><th>Prediction</th></tr></thead><tbody>`;
-                        (data.results || []).forEach(row => {
-                            html += `<tr class="${row.Prediction}"><td>${row.Antibiotic}</td><td>${row.Prediction}</td></tr>`;
-                        });
-                        html += `</tbody></table>`;
-                        tableContainer.innerHTML = html;
-                    } else {
-                        tableContainer.innerHTML = `<p>Error: ${data.message}</p>`;
-                    }
-
-                    resultsTab.innerHTML = "";
-                    resultsTab.appendChild(tableContainer);
-                    showTab({target: document.querySelector(".tab-buttons button:nth-child(2)")}, "results");
-                })
-                .catch(error => {
-                    alert("Error: " + error.message);
-                });
-            });
+            }
         });
-    </script>
+
+    // Prediction handler
+    document.getElementById("predict-form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = {
+            species: document.getElementById("species").value,
+            family: document.getElementById("family").value,
+            country: document.getElementById("country").value,
+            gender: document.getElementById("gender").value,
+            age: document.getElementById("age").value,
+            speciality: document.getElementById("speciality").value,
+            source: document.getElementById("source").value
+        };
+
+        fetch("/predict", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData)
+        })
+        .then(res => res.json())
+        .then(data => {
+            const resultsDiv = document.getElementById("results-table");
+            if (data.predictions && data.predictions.length > 0) {
+                let tableHTML = '<table><tr><th>Antibiotic</th><th>Prediction</th></tr>';
+                data.predictions.forEach(item => {
+                    const cssClass = item.prediction.includes("not recommended") || item.prediction.includes("Error") ? "error" : "success";
+                    tableHTML += `<tr><td><strong>${item.antibiotic}</strong></td><td class="${cssClass}">${item.prediction}</td></tr>`;
+                });
+                tableHTML += '</table>';
+                resultsDiv.innerHTML = tableHTML;
+            } else {
+                resultsDiv.innerHTML = "<p>No predictions available.</p>";
+            }
+        });
+    });
+</script>
+
 </body>
 </html>

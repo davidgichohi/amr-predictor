@@ -1,0 +1,578 @@
+{
+  "species": {
+    "Acinetobacter Baumannii": {
+      "Species_Acinetobacter baumannii": 1
+    },
+    "Acinetobacter Baylyi": {
+      "Species_Acinetobacter baylyi": 1
+    },
+    "Acinetobacter Bereziniae": {
+      "Species_Acinetobacter bereziniae": 1
+    },
+    "Acinetobacter Calcoaceticus": {
+      "Species_Acinetobacter calcoaceticus": 1
+    },
+    "Acinetobacter Colistiniresistens": {
+      "Species_Acinetobacter colistiniresistens": 1
+    },
+    "Acinetobacter Courvalinii": {
+      "Species_Acinetobacter courvalinii": 1
+    },
+    "Acinetobacter Dijkshoorniae": {
+      "Species_Acinetobacter dijkshoorniae": 1
+    },
+    "Acinetobacter Guillouiae": {
+      "Species_Acinetobacter guillouiae": 1
+    },
+    "Acinetobacter Haemolyticus": {
+      "Species_Acinetobacter haemolyticus": 1
+    },
+    "Acinetobacter Johnsonii": {
+      "Species_Acinetobacter johnsonii": 1
+    },
+    "Acinetobacter Junii": {
+      "Species_Acinetobacter junii": 1
+    },
+    "Acinetobacter Lactucae": {
+      "Species_Acinetobacter lactucae": 1
+    },
+    "Acinetobacter Lwoffii": {
+      "Species_Acinetobacter lwoffii": 1
+    },
+    "Acinetobacter Nosocomialis": {
+      "Species_Acinetobacter nosocomialis": 1
+    },
+    "Acinetobacter Pitii": {
+      "Species_Acinetobacter pitii": 1
+    },
+    "Acinetobacter Proteolyticus": {
+      "Species_Acinetobacter proteolyticus": 1
+    },
+    "Acinetobacter Radioresistens": {
+      "Species_Acinetobacter radioresistens": 1
+    },
+    "Acinetobacter Schindleri": {
+      "Species_Acinetobacter schindleri": 1
+    },
+    "Acinetobacter Seifertii": {
+      "Species_Acinetobacter seifertii": 1
+    },
+    "Acinetobacter Soli": {
+      "Species_Acinetobacter soli": 1
+    },
+    "Acinetobacter Spp": {
+      "Species_Acinetobacter spp": 1
+    },
+    "Acinetobacter Ursingii": {
+      "Species_Acinetobacter ursingii": 1
+    },
+    "Acinetobacter Variabilis": {
+      "Species_Acinetobacter variabilis": 1
+    },
+    "Aeromonas Hydrophila": {
+      "Species_Aeromonas hydrophila": 1
+    },
+    "Alcaligenes Faecalis": {
+      "Species_Alcaligenes faecalis": 1
+    },
+    "Bordetella Trematum": {
+      "Species_Bordetella trematum": 1
+    },
+    "Burkholderia Cenocepacia": {
+      "Species_Burkholderia cenocepacia": 1
+    },
+    "Citrobacter Amalonaticus": {
+      "Species_Citrobacter amalonaticus": 1
+    },
+    "Citrobacter Braakii": {
+      "Species_Citrobacter braakii": 1
+    },
+    "Citrobacter Freundii": {
+      "Species_Citrobacter freundii": 1
+    },
+    "Citrobacter Koseri": {
+      "Species_Citrobacter koseri": 1
+    },
+    "Citrobacter Sedlakii": {
+      "Species_Citrobacter sedlakii": 1
+    },
+    "Citrobacter Spp": {
+      "Species_Citrobacter spp": 1
+    },
+    "Enterobacter Asburiae": {
+      "Species_Enterobacter asburiae": 1
+    },
+    "Enterobacter Bugandensis": {
+      "Species_Enterobacter bugandensis": 1
+    },
+    "Enterobacter Cloacae": {
+      "Species_Enterobacter cloacae": 1
+    },
+    "Enterobacter Hormaechi": {
+      "Species_Enterobacter hormaechi": 1
+    },
+    "Enterobacter Kobei": {
+      "Species_Enterobacter kobei": 1
+    },
+    "Enterobacter Ludwigii": {
+      "Species_Enterobacter ludwigii": 1
+    },
+    "Enterobacter Roggenkampii": {
+      "Species_Enterobacter roggenkampii": 1
+    },
+    "Enterobacter Spp": {
+      "Species_Enterobacter spp": 1
+    },
+    "Enterobacter Xiangfangensis": {
+      "Species_Enterobacter xiangfangensis": 1
+    },
+    "Enterococcus Canintestini": {
+      "Species_Enterococcus canintestini": 1
+    },
+    "Enterococcus Faecalis": {
+      "Species_Enterococcus faecalis": 1
+    },
+    "Enterococcus Faecium": {
+      "Species_Enterococcus faecium": 1
+    },
+    "Enterococcus Hirae": {
+      "Species_Enterococcus hirae": 1
+    },
+    "Enterococcus Raffinosus": {
+      "Species_Enterococcus raffinosus": 1
+    },
+    "Enterococcus Spp": {
+      "Species_Enterococcus spp": 1
+    },
+    "Escherichia Coli": {
+      "Species_Escherichia coli": 1
+    },
+    "Escherichia Spp": {
+      "Species_Escherichia spp": 1
+    },
+    "Haemophilus Influenzae": {
+      "Species_Haemophilus influenzae": 1
+    },
+    "Klebsiella Aerogenes": {
+      "Species_Klebsiella aerogenes": 1
+    },
+    "Klebsiella Oxytoca": {
+      "Species_Klebsiella oxytoca": 1
+    },
+    "Klebsiella Pneumoniae": {
+      "Species_Klebsiella pneumoniae": 1
+    },
+    "Klebsiella Spp": {
+      "Species_Klebsiella spp": 1
+    },
+    "Klebsiella Variicola": {
+      "Species_Klebsiella variicola": 1
+    },
+    "Moraxella Catarrhalis": {
+      "Species_Moraxella catarrhalis": 1
+    },
+    "Morganella Morganii": {
+      "Species_Morganella morganii": 1
+    },
+    "Myroides Odoratimimus": {
+      "Species_Myroides odoratimimus": 1
+    },
+    "Proteus Hauseri": {
+      "Species_Proteus hauseri": 1
+    },
+    "Proteus Mirabilis": {
+      "Species_Proteus mirabilis": 1
+    },
+    "Proteus Penneri": {
+      "Species_Proteus penneri": 1
+    },
+    "Proteus Spp": {
+      "Species_Proteus spp": 1
+    },
+    "Proteus Vulgaris": {
+      "Species_Proteus vulgaris": 1
+    },
+    "Providencia Alcalifaciens": {
+      "Species_Providencia alcalifaciens": 1
+    },
+    "Providencia Rettgeri": {
+      "Species_Providencia rettgeri": 1
+    },
+    "Providencia Spp": {
+      "Species_Providencia spp": 1
+    },
+    "Providencia Stuartii": {
+      "Species_Providencia stuartii": 1
+    },
+    "Pseudomonas Aeruginosa": {
+      "Species_Pseudomonas aeruginosa": 1
+    },
+    "Pseudomonas Fulva": {
+      "Species_Pseudomonas fulva": 1
+    },
+    "Pseudomonas Putida": {
+      "Species_Pseudomonas putida": 1
+    },
+    "Pseudomonas Putida/Fluorescens Group": {
+      "Species_Pseudomonas putida/fluorescens Group": 1
+    },
+    "Pseudomonas Spp": {
+      "Species_Pseudomonas spp": 1
+    },
+    "Raoultella Ornithinolytica": {
+      "Species_Raoultella ornithinolytica": 1
+    },
+    "Salmonella Spp": {
+      "Species_Salmonella spp": 1
+    },
+    "Serratia Liquefaciens": {
+      "Species_Serratia liquefaciens": 1
+    },
+    "Serratia Marcescens": {
+      "Species_Serratia marcescens": 1
+    },
+    "Serratia Spp": {
+      "Species_Serratia spp": 1
+    },
+    "Serratia Ureilytica": {
+      "Species_Serratia ureilytica": 1
+    },
+    "Staphylococcus Coagulase Negative": {
+      "Species_Staphylococcus Coagulase Negative": 1
+    },
+    "Staphylococcus Arlettae": {
+      "Species_Staphylococcus arlettae": 1
+    },
+    "Staphylococcus Aureus": {
+      "Species_Staphylococcus aureus": 1
+    },
+    "Staphylococcus Cohnii": {
+      "Species_Staphylococcus cohnii": 1
+    },
+    "Staphylococcus Epidermidis": {
+      "Species_Staphylococcus epidermidis": 1
+    },
+    "Staphylococcus Haemolyticus": {
+      "Species_Staphylococcus haemolyticus": 1
+    },
+    "Staphylococcus Hominis": {
+      "Species_Staphylococcus hominis": 1
+    },
+    "Staphylococcus Lugdunensis": {
+      "Species_Staphylococcus lugdunensis": 1
+    },
+    "Staphylococcus Pasteuri": {
+      "Species_Staphylococcus pasteuri": 1
+    },
+    "Staphylococcus Saccharolyticus": {
+      "Species_Staphylococcus saccharolyticus": 1
+    },
+    "Staphylococcus Saprophyticus": {
+      "Species_Staphylococcus saprophyticus": 1
+    },
+    "Staphylococcus Sciuri": {
+      "Species_Staphylococcus sciuri": 1
+    },
+    "Staphylococcus Simulans": {
+      "Species_Staphylococcus simulans": 1
+    },
+    "Staphylococcus Spp": {
+      "Species_Staphylococcus spp": 1
+    },
+    "Staphylococcus Ureilyticus": {
+      "Species_Staphylococcus ureilyticus": 1
+    },
+    "Staphylococcus Xylosus": {
+      "Species_Staphylococcus xylosus": 1
+    },
+    "Stenotrophomonas Maltophilia": {
+      "Species_Stenotrophomonas maltophilia": 1
+    },
+    "Streptococcus Agalactiae": {
+      "Species_Streptococcus agalactiae": 1
+    },
+    "Streptococcus Anginosus": {
+      "Species_Streptococcus anginosus": 1
+    },
+    "Streptococcus Constellatus": {
+      "Species_Streptococcus constellatus": 1
+    },
+    "Streptococcus Dysgalactiae": {
+      "Species_Streptococcus dysgalactiae": 1
+    },
+    "Streptococcus Pneumoniae": {
+      "Species_Streptococcus pneumoniae": 1
+    },
+    "Streptococcus Pyogenes": {
+      "Species_Streptococcus pyogenes": 1
+    },
+    "Streptococcus, Beta Hemolytic": {
+      "Species_Streptococcus, Beta Hemolytic": 1
+    },
+    "default": {}
+  },
+  "family": {
+    "Enterobacterales": {
+      "Family_Enterobacterales": 1
+    },
+    "Enterobacteriaceae": {
+      "Family_Enterobacteriaceae": 1
+    },
+    "Enterococcus Spp": {
+      "Family_Enterococcus spp": 1
+    },
+    "Haemophilus Spp": {
+      "Family_Haemophilus spp": 1
+    },
+    "Moraxellaceae": {
+      "Family_Moraxellaceae": 1
+    },
+    "Non-Enterobacterales": {
+      "Family_Non-Enterobacterales": 1
+    },
+    "Non-Enterobacteriaceae": {
+      "Family_Non-Enterobacteriaceae": 1
+    },
+    "Staphylococcus Spp": {
+      "Family_Staphylococcus spp": 1
+    },
+    "Streptococcus Pneumoniae": {
+      "Family_Streptococcus pneumoniae": 1
+    },
+    "Streptococcus Spp (No S. Pneumo)": {
+      "Family_Streptococcus spp (no S. pneumo)": 1
+    },
+    "default": {}
+  },
+  "country": {
+    "Cameroon": {
+      "Country_Cameroon": 1
+    },
+    "Ghana": {
+      "Country_Ghana": 1
+    },
+    "Ivory Coast": {
+      "Country_Ivory Coast": 1
+    },
+    "Kenya": {
+      "Country_Kenya": 1
+    },
+    "Malawi": {
+      "Country_Malawi": 1
+    },
+    "Morocco": {
+      "Country_Morocco": 1
+    },
+    "Nigeria": {
+      "Country_Nigeria": 1
+    },
+    "South Africa": {
+      "Country_South Africa": 1
+    },
+    "Uganda": {
+      "Country_Uganda": 1
+    },
+    "default": {}
+  },
+  "gender": {
+    "Male": {
+      "Gender_Male": 1
+    },
+    "Female": {
+      "Gender_Female": 1
+    },
+    "default": {}
+  },
+  "age": {
+    "0 To 2 Years": {
+      "Age Group_0 to 2 Years": 1
+    },
+    "13 To 18 Years": {
+      "Age Group_13 to 18 Years": 1
+    },
+    "19 To 64 Years": {
+      "Age Group_19 to 64 Years": 1
+    },
+    "3 To 12 Years": {
+      "Age Group_3 to 12 Years": 1
+    },
+    "65 To 84 Years": {
+      "Age Group_65 to 84 Years": 1
+    },
+    "85 And Over": {
+      "Age Group_85 and Over": 1
+    },
+    "Unknown": {
+      "Age Group_Unknown": 1
+    },
+    "default": {}
+  },
+  "speciality": {
+    "Emergency Room": {
+      "Speciality_Emergency Room": 1
+    },
+    "General Unspecified Icu": {
+      "Speciality_General Unspecified ICU": 1
+    },
+    "Medicine General": {
+      "Speciality_Medicine General": 1
+    },
+    "Medicine Icu": {
+      "Speciality_Medicine ICU": 1
+    },
+    "None Given": {
+      "Speciality_None Given": 1
+    },
+    "Other": {
+      "Speciality_Other": 1
+    },
+    "Pediatric General": {
+      "Speciality_Pediatric General": 1
+    },
+    "Pediatric Icu": {
+      "Speciality_Pediatric ICU": 1
+    },
+    "Surgery General": {
+      "Speciality_Surgery General": 1
+    },
+    "Surgery Icu": {
+      "Speciality_Surgery ICU": 1
+    },
+    "default": {}
+  },
+  "source": {
+    "Abscess": {
+      "Source_Abscess": 1
+    },
+    "Appendix": {
+      "Source_Appendix": 1
+    },
+    "Bladder": {
+      "Source_Bladder": 1
+    },
+    "Blood": {
+      "Source_Blood": 1
+    },
+    "Bone": {
+      "Source_Bone": 1
+    },
+    "Bronchiole": {
+      "Source_Bronchiole": 1
+    },
+    "Bronchoalveolar Lavage": {
+      "Source_Bronchoalveolar lavage": 1
+    },
+    "Bronchus": {
+      "Source_Bronchus": 1
+    },
+    "Burn": {
+      "Source_Burn": 1
+    },
+    "Csf": {
+      "Source_CSF": 1
+    },
+    "Carbuncle": {
+      "Source_Carbuncle": 1
+    },
+    "Catheters": {
+      "Source_Catheters": 1
+    },
+    "Cellulitis": {
+      "Source_Cellulitis": 1
+    },
+    "Cervix": {
+      "Source_Cervix": 1
+    },
+    "Colon": {
+      "Source_Colon": 1
+    },
+    "Decubitus": {
+      "Source_Decubitus": 1
+    },
+    "Diverticulum": {
+      "Source_Diverticulum": 1
+    },
+    "Endotracheal Aspirate": {
+      "Source_Endotracheal aspirate": 1
+    },
+    "Eye": {
+      "Source_Eye": 1
+    },
+    "Furuncle": {
+      "Source_Furuncle": 1
+    },
+    "Gall Bladder": {
+      "Source_Gall Bladder": 1
+    },
+    "Gastric Abscess": {
+      "Source_Gastric Abscess": 1
+    },
+    "Genitourinary: Other": {
+      "Source_Genitourinary: Other": 1
+    },
+    "Impetiginous Lesions": {
+      "Source_Impetiginous lesions": 1
+    },
+    "Intestinal: Other": {
+      "Source_Intestinal: Other": 1
+    },
+    "Kidney": {
+      "Source_Kidney": 1
+    },
+    "Liver": {
+      "Source_Liver": 1
+    },
+    "Lungs": {
+      "Source_Lungs": 1
+    },
+    "None Given": {
+      "Source_None Given": 1
+    },
+    "Pancreas": {
+      "Source_Pancreas": 1
+    },
+    "Peritoneal Fluid": {
+      "Source_Peritoneal Fluid": 1
+    },
+    "Prostate": {
+      "Source_Prostate": 1
+    },
+    "Respiratory: Other": {
+      "Source_Respiratory: Other": 1
+    },
+    "Skin": {
+      "Source_Skin": 1
+    },
+    "Skin: Other": {
+      "Source_Skin: Other": 1
+    },
+    "Sputum": {
+      "Source_Sputum": 1
+    },
+    "Stomach": {
+      "Source_Stomach": 1
+    },
+    "Thoracentesis Fluid": {
+      "Source_Thoracentesis Fluid": 1
+    },
+    "Ulcer": {
+      "Source_Ulcer": 1
+    },
+    "Ureter": {
+      "Source_Ureter": 1
+    },
+    "Urethra": {
+      "Source_Urethra": 1
+    },
+    "Urine": {
+      "Source_Urine": 1
+    },
+    "Uterus": {
+      "Source_Uterus": 1
+    },
+    "Wound": {
+      "Source_Wound": 1
+    },
+    "default": {}
+  }
+}
